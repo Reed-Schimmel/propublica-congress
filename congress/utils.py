@@ -26,7 +26,7 @@ class NotFound(CongressError):
 def check_chamber(chamber):
     "Validate that chamber is house or senate"
     if str(chamber).lower() not in ('house', 'senate', 'both'):
-        raise TypeError('chamber must be either "house", "senate", or "both')
+        raise TypeError('chamber must be either "house", "senate", or "both"')
 
 
 def get_congress(year):
